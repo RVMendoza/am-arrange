@@ -1,0 +1,26 @@
+{
+  "name": "am-arrange",
+  "version": "0.1.0",
+  "description": "A set of style patterns that build layout",
+  "main": "index.css",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/RVMendoza/am-arrange.git"
+  },
+  "keywords": [
+    "am-css",
+    "css",
+    "suit-css",
+    "arrange",
+    "component"
+  ],
+  "author": "RV Mendoza",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/RVMendoza/am-arrange/issues"
+  },
+  "homepage": "https://github.com/RVMendoza/am-arrange"
+}
