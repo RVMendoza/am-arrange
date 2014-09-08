@@ -1,0 +1,15 @@
+{
+  "name": "am-arrange",
+  "authors": [
+    "RV Mendoza"
+  ],
+  "main": "index.css",
+  "keywords": [
+    "am-css",
+    "css",
+    "suit-css",
+    "arrange",
+    "component"
+  ],
+  "license": "MIT"
+}
