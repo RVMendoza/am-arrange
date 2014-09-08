@@ -19,7 +19,7 @@
  * 5. Reset the table-layout algorithm in case a component is nested.
  */
 
-[am-arrange] {
+[am-Arrange] {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box; /* 1 */
@@ -38,8 +38,8 @@
  *    Margin has no effect when coupled with `display: table-cell`.
  * 2. All cells are top-aligned by default
  */
-[am-arrangeSize~="fit"],
-[am-arrangeSize~="fill"] {
+[am-ArrangeSize~="fit"],
+[am-ArrangeSize~="fill"] {
   display: table-cell;
   padding: 0; /* 1 */
   vertical-align: top; /* 2 */
@@ -49,7 +49,7 @@
  * Make sure the main content block expands to fill the remaining space.
  */
 
-[am-arrangeSize~="fill"] {
+[am-ArrangeSize~="fill"] {
   width: 100%;
 }
 
@@ -62,7 +62,7 @@
  * need their width set to `100%`.
  */
 
-[am-arrangeSize~="fill"] img {
+[am-ArrangeSize~="fill"] img {
   height: auto;
   max-width: 100%;
 }
@@ -73,7 +73,7 @@
  * provide size to a cell.
  */
 
-[am-arrangeSize~="fit"] img {
+[am-ArrangeSize~="fit"] img {
   max-width: none !important;
   width: auto !important;
 }
@@ -81,13 +81,13 @@
 /* Vertical alignment modifiers
    ========================================================================== */
 
-[am-arrange~="middle"] [am-arrangeSize~="fill"],
-[am-arrange~="middle"] [am-arrangeSize~="fit"] {
+[am-Arrange~="middle"] [am-ArrangeSize~="fill"],
+[am-Arrange~="middle"] [am-ArrangeSize~="fit"] {
   vertical-align: middle;
 }
 
-[am-arrange~="middle"] [am-arrangeSize~="fill"],
-[am-arrange~="middle"] [am-arrangeSize~="fit"] {
+[am-Arrange~="middle"] [am-ArrangeSize~="fill"],
+[am-Arrange~="middle"] [am-ArrangeSize~="fit"] {
   vertical-align: bottom;
 }
 
@@ -99,7 +99,7 @@
  * the width of their content.
  */
 
-[am-arrange~="equal"] {
+[am-Arrange~="equal"] {
   table-layout: fixed;
 }
 
@@ -111,8 +111,8 @@
  * Their inner images will automatically be responsive.
  */
 
-[am-arrange~="equal"] > [am-arrangeSize~="fill"],
-[am-arrange~="equal"] > [am-arrangeSize~="fit"] {
+[am-Arrange~="equal"] > [am-ArrangeSize~="fill"],
+[am-Arrange~="equal"] > [am-ArrangeSize~="fit"] {
   width: 1%;
 }
 
@@ -127,11 +127,11 @@
  * against it.
  */
 
-[am-arrange~="gutter"] {
+[am-Arrange~="gutter"] {
   margin: 0 calc(-0.5 * var(--Arrange-gutter-size));
 }
 
-[am-arrange~="gutter"] > [am-arrangeSize~="fill"],
-[am-arrange~="gutter"] > [am-arrangeSize~="fit"] {
+[am-Arrange~="gutter"] > [am-ArrangeSize~="fill"],
+[am-Arrange~="gutter"] > [am-ArrangeSize~="fit"] {
   padding: 0 calc(0.5 * var(--Arrange-gutter-size));
 }
