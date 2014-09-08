@@ -1,7 +1,7 @@
 {
   "name": "am-arrange",
   "version": "0.4.0",
-  "description": "A set of SuitCSS patterns that build layout in AM CSS convention",
+  "description": "The SuitCSS arrange pattern, but in AM CSS convention",
   "main": "index.css",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
