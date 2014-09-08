@@ -1,6 +1,6 @@
 {
   "name": "am-arrange",
-  "version": "0.5.0",
+  "version": "0.6.0",
   "description": "The SuitCSS arrange pattern, but in AM CSS convention",
   "main": "index.css",
   "scripts": {
