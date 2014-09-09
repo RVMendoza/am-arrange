@@ -19,6 +19,7 @@
  * 5. Reset the table-layout algorithm in case a component is nested.
  */
 
+[data-am-Arrange],
 [am-Arrange] {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -38,6 +39,8 @@
  *    Margin has no effect when coupled with `display: table-cell`.
  * 2. All cells are top-aligned by default
  */
+[data-am-ArrangeSize~="fit"],
+[data-am-ArrangeSize~="fill"],
 [am-ArrangeSize~="fit"],
 [am-ArrangeSize~="fill"] {
   display: table-cell;
@@ -49,6 +52,7 @@
  * Make sure the main content block expands to fill the remaining space.
  */
 
+[data-am-ArrangeSize~="fill"],
 [am-ArrangeSize~="fill"] {
   width: 100%;
 }
@@ -62,6 +66,7 @@
  * need their width set to `100%`.
  */
 
+[data-am-ArrangeSize~="fill"] img,
 [am-ArrangeSize~="fill"] img {
   height: auto;
   max-width: 100%;
@@ -72,7 +77,7 @@
  * 'Arrange-sizeFit' cannot be fluid, otherwise they lose their ability to
  * provide size to a cell.
  */
-
+[data-am-ArrangeSize~="fit"] img,
 [am-ArrangeSize~="fit"] img {
   max-width: none !important;
   width: auto !important;
@@ -80,12 +85,15 @@
 
 /* Vertical alignment modifiers
    ========================================================================== */
-
+[data-am-Arrange~="middle"] [data-am-ArrangeSize~="fill"],
+[data-am-Arrange~="middle"] [data-am-ArrangeSize~="fit"],
 [am-Arrange~="middle"] [am-ArrangeSize~="fill"],
 [am-Arrange~="middle"] [am-ArrangeSize~="fit"] {
   vertical-align: middle;
 }
 
+[data-am-Arrange~="middle"] [data-am-ArrangeSize~="fill"],
+[data-am-Arrange~="middle"] [data-am-ArrangeSize~="fit"],
 [am-Arrange~="middle"] [am-ArrangeSize~="fill"],
 [am-Arrange~="middle"] [am-ArrangeSize~="fit"] {
   vertical-align: bottom;
@@ -98,7 +106,7 @@
  * This layout algorithm will create equal-width table cells, irrespective of
  * the width of their content.
  */
-
+[data-am-Arrange~="equal"],
 [am-Arrange~="equal"] {
   table-layout: fixed;
 }
@@ -111,6 +119,8 @@
  * Their inner images will automatically be responsive.
  */
 
+[data-am-Arrange~="equal"] > [data-am-ArrangeSize~="fill"],
+[data-am-Arrange~="equal"] > [data-am-ArrangeSize~="fit"],
 [am-Arrange~="equal"] > [am-ArrangeSize~="fill"],
 [am-Arrange~="equal"] > [am-ArrangeSize~="fit"] {
   width: 1%;
@@ -127,10 +137,13 @@
  * against it.
  */
 
+[data-am-Arrange~="gutter"],
 [am-Arrange~="gutter"] {
   margin: 0 calc(-0.5 * var(--Arrange-gutter-size));
 }
 
+[data=am-Arrange~="gutter"] > [data=am-ArrangeSize~="fill"],
+[data=am-Arrange~="gutter"] > [data=am-ArrangeSize~="fit"],
 [am-Arrange~="gutter"] > [am-ArrangeSize~="fill"],
 [am-Arrange~="gutter"] > [am-ArrangeSize~="fit"] {
   padding: 0 calc(0.5 * var(--Arrange-gutter-size));
