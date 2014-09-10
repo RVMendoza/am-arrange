@@ -92,10 +92,10 @@
   vertical-align: middle;
 }
 
-[data-am-Arrange~="middle"] [data-am-ArrangeSize~="fill"],
-[data-am-Arrange~="middle"] [data-am-ArrangeSize~="fit"],
-[am-Arrange~="middle"] [am-ArrangeSize~="fill"],
-[am-Arrange~="middle"] [am-ArrangeSize~="fit"] {
+[data-am-Arrange~="bottom"] [data-am-ArrangeSize~="fill"],
+[data-am-Arrange~="bottom"] [data-am-ArrangeSize~="fit"],
+[am-Arrange~="bottom"] [am-ArrangeSize~="fill"],
+[am-Arrange~="bottom"] [am-ArrangeSize~="fit"] {
   vertical-align: bottom;
 }
 
