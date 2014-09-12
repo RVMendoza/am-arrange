@@ -142,9 +142,9 @@
   margin: 0 calc(-0.5 * var(--Arrange-gutter-size));
 }
 
-[data=am-Arrange~="gutter"] > [data=am-ArrangeSize~="fill"],
-[data=am-Arrange~="gutter"] > [data=am-ArrangeSize~="fit"],
-[am-Arrange~="gutter"] > [am-ArrangeSize~="fill"],
-[am-Arrange~="gutter"] > [am-ArrangeSize~="fit"] {
+[data-am-Arrange~="withGutter"] > [data-am-ArrangeSize~="fill"],
+[data-am-Arrange~="withGutter"] > [data-am-ArrangeSize~="fit"],
+[am-Arrange~="withGutter"] > [am-ArrangeSize~="fill"],
+[am-Arrange~="withGutter"] > [am-ArrangeSize~="fit"] {
   padding: 0 calc(0.5 * var(--Arrange-gutter-size));
 }
